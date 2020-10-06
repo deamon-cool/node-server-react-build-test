@@ -1,8 +1,12 @@
 const express = require('express');
 
 const app = express();
-const port = 3000;
+const PORT = 3000;
 
 app.get('/', (req, res) => {
-    res.sendFile('');
+    res.send('Hello');
+});
+
+app.listen(PORT, () => {
+    console.log('127.0.0.1:' + PORT);
 });
